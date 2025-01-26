@@ -6,7 +6,7 @@ int main(){
     if(a & msb_mask){
         printf("Set");
     }else{
-        printf("Not set");
+        printf("Not Set");
     }
 return 0;
 }
