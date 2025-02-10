@@ -5,7 +5,7 @@ int main(){
     if(c =='R'){
         printf("Stop");
     } else if(c =='G'){
-        pirntf("Go");
+        printf("Go");
     } else if(c =='Y'){
         printf("Slow Down");
     } else {
