@@ -10,7 +10,7 @@ int main() {
             printf(" ");
         }
         for (j = 1; j <= (2 * i - 1); j++) { // Printing stars
-            printf("* ");
+            printf("*");
         }
         printf("\n"); // Move to the next line
     }
