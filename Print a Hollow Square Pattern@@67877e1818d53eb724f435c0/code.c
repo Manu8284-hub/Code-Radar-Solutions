@@ -10,7 +10,7 @@ int main() {
             if (i == 1 || i == n || j == 1 || j == n) 
                 printf("*");  // Print stars at boundaries
             else 
-                printf("");  // Print spaces inside
+                printf(" ");  // Print spaces inside
         }
         printf("\n");  // Move to the next line
     }
