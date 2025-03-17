@@ -1,18 +1,24 @@
-#include<stdio.h>
-int prime(int n){
-    if(n<2){
-        return 0;
-    }
-    for(int i=2; i<=n; i++){
-        if(n%i==0){
-            return 0;
-        } else{
-            return 1;
+#include <stdio.h>
+
+int prime(int n) {
+    if (n < 2) return 0; // Numbers less than 2 are not prime
+    
+    for (int i = 2; i * i <= n; i++) { // Check divisibility up to sqrt(n)
+        if (n % i == 0) {
+            return 0; // Not a prime number
         }
     }
+    return 1; // Prime number
 }
-int main(){
+
+int main() {
     int n;
-    scanf("%d",&n);
-    printf("%d",prime(n));
+    scanf("%d", &n);
+    
+    if (prime(n))
+        printf("Prime\n");
+    else
+        printf("Not Prime\n");
+
+    return 0;
 }
