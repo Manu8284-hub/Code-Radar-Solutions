@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int prime(int n) {
+int isPrime(int n) {
     if (n < 2) return 0; // Numbers less than 2 are not prime
     
     for (int i = 2; i * i <= n; i++) { // Check divisibility up to sqrt(n)
@@ -11,14 +11,3 @@ int prime(int n) {
     return 1; // Prime number
 }
 
-int main() {
-    int n;
-    scanf("%d", &n);
-    
-    if (prime(n))
-        printf("Prime\n");
-    else
-        printf("Not Prime\n");
-
-    return 0;
-}
