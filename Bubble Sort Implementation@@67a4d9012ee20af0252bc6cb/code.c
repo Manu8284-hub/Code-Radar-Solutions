@@ -1,6 +1,5 @@
 // Your code here...
-#include<iostream>
-using namespace std;
+#include<stdio.h>
 void bubble(int arr[],int n){
     for(int i=0;i<n-1; i++){
         for(int j=0; j<n-i-1;j++){
@@ -12,9 +11,10 @@ void bubble(int arr[],int n){
 }
 void printarray(int arr[],int n){
     for(int i=0; i<n; i++){
-        cout<<arr[i]<<" ";
+        printf(arr[i]," ");
+       
     }
-    cout<<endl;
+    printf(" ");
 }
 int main(){
     int n=5;
