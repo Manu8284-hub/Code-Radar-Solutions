@@ -20,12 +20,12 @@ void printarray(int arr[], int n) {
     printf("\n");  // Print newline for better formatting
 }
 
-int main() {
-    int n = 5;
-    int arr[] = {4, 1, 5, 2, 3};
+// int main() {
+//     int n = 5;
+//     int arr[] = {4, 1, 5, 2, 3};
     
-    bubble(arr, n);
-    printarray(arr, n);
+//     bubble(arr, n);
+//     printarray(arr, n);
     
-    return 0;
-}
+//     return 0;
+// }
